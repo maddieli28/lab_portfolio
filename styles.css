@@ -1,0 +1,94 @@
+/* General Styles */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background: url('images/bg.png') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+  }
+  
+  header {
+    text-align: center;
+    background-color: rgba(68, 255, 249, 0.141); /* Transparent background for header */
+    color: white;
+    padding: 1.9rem 0;
+    position: relative; /* Ensures header stays fixed */
+    z-index: 1; /* Bring header to front */
+  }
+  
+  h1 {
+    margin: 1;
+    font-size: 1.6rem;
+  }
+  
+  /* Portfolio Section */
+  .portfolio-section {
+    padding: 2rem 0; /* Padding on top and bottom */
+    display: flex;
+    justify-content: center; /* Center align content */
+    flex-direction: column; /* Stack elements vertically */
+  }
+  
+  .scroll-container {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding: 3rem 0; /* Add padding to avoid cropping */
+    display: flex;
+    justify-content: center; /* Center align the card container */
+  }
+  
+  .card-container {
+    display: flex;
+    gap: 3rem; /* Space between cards */
+  }
+  
+  .card {
+    flex: 0 0 350px; /* Card width of 600px */
+    height: 500px; /* Card height of 400px */
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover Effect: Glow and Pop-out */
+  .card:hover {
+    transform: scale(1.1); /* Make the card grow slightly */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 0 15px rgba(90, 255, 255, 0.8); /* Add glow effect */
+  }
+  
+  .card img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover; /* Ensures image covers the available area without distortion */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  .card-content {
+    padding: 1rem;
+    height: 30%; /* Adjust content area height */
+  }
+  
+  h3 {
+    margin: 0.5rem 0;
+  }
+  
+  p {
+    color: #555;
+  }
+  
+  /* Custom scrollbar styling */
+  .scroll-container::-webkit-scrollbar {
+    height: 12px;
+  }
+  
+  .scroll-container::-webkit-scrollbar-thumb {
+    background-color: #1be2d896;
+    border-radius: 20px;
+  }
+  
+  .scroll-container::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
+  }
+  
